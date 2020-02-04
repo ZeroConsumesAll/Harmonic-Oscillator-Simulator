@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel = "stylesheet" type = "text/css" media = "screen" href = "project.css" />
+        <script src ="https://d3js.org/d3.v5.min.js"></script>
+    </head>
+    <body >
+        <h1>Oscilloscope Simulator</h1>
+        <span class = "options"> Phase shift: </span>
+        <input type="range" class = "slider" value = "0" min="0" max= "10" value="0" id = "phase shift" oninput = "render()">  <br><br>
+        <span class = "options"> Gamma: </span>
+        <input type="range" class = "slider" value = "0" min="0" max= "10" value="0" id = "gamma" oninput = "render()"> <br><br>
+        <span class = "options"> Frequency </span>
+        <input type="range" class = "slider" value = "0" min="1" max ="200" value="100" class = "options"  id = "freq" oninput = "render()"> <br><br>
+        <span class = "options"> Amplitude </span>
+        <input type="range" class = "slider" value = "0" min="1" max="500" id = "amplitude" oninput = "render()">  <br><br>
+        
+        <button class = "allbuttons" id = "step"  value = "Critically damped function" name = "critical" onclick = "renderCritical()"> Critically damp function</button> <br>
+        <h3> x(t) </h3>
+        
+        <div id = "chart-area"></div>
+        <script src = "project.js" > </script>
+     </body>
+
+</html>
