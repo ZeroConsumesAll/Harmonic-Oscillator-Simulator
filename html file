@@ -5,21 +5,24 @@
         <script src ="https://d3js.org/d3.v5.min.js"></script>
     </head>
     <body >
-        <h1>Oscilloscope Simulator</h1>
+        <h1 class = "title">Harmonic Oscillator Simulator</h1>
         <span class = "options"> Phase shift: </span>
-        <input type="range" class = "slider" value = "0" min="0" max= "10" value="0" id = "phase shift" oninput = "render()">  <br><br>
+        <input type="range" class = "slider" value = "0" min="0" max= "25" value="0" id = "phase shift" oninput = "render()">  <br><br>
         <span class = "options"> Gamma: </span>
         <input type="range" class = "slider" value = "0" min="0" max= "10" value="0" id = "gamma" oninput = "render()"> <br><br>
-        <span class = "options"> Frequency </span>
-        <input type="range" class = "slider" value = "0" min="1" max ="200" value="100" class = "options"  id = "freq" oninput = "render()"> <br><br>
+        <span class = "options"> Angular Frequency </span>
+        <input type="range" class = "slider" value = "0" min="1" max ="500" value="100" class = "options"  id = "freq" oninput = "render()"> <br><br>
         <span class = "options"> Amplitude </span>
         <input type="range" class = "slider" value = "0" min="1" max="500" id = "amplitude" oninput = "render()">  <br><br>
         
-        <button class = "allbuttons" id = "step"  value = "Critically damped function" name = "critical" onclick = "renderCritical()"> Critically damp function</button> <br>
-        <h3> x(t) </h3>
+        <button class = "allbuttons" id = "step"  value = "Critically damped function" name = "critical" onclick = "renderCritical()"> Critically damp function</button>
+        <h4 > x(t) </h4>
+        <h4 class = "heading" style = "position:relative; left:350px; top:200px;" > t (s) </h4>
         
-        <div id = "chart-area"></div>
+        <div class = "box">
         <script src = "project.js" > </script>
+        
+        </div>
      </body>
 
 </html>
