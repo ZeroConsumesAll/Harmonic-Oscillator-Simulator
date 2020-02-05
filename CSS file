@@ -1,3 +1,9 @@
+.title {
+  font-family: Arial;
+  color: #1F2F46;
+
+}
+
 .button {
   background-color: #4CAF50; /* Green */
   border: 10px;
@@ -14,13 +20,13 @@ span.options{
    padding: 5px;
    border-radius: 10px;
    border: 20px darkblue;
+   font-family: Arial;
   
    background:#466696;
    justify-content: center;
    margin: 5px;
-   border-color:red;
    padding: 5px;
-   font-size: 15px;
+   font-size: 13px;
    letter-spacing: 1px;
 
 }
@@ -58,7 +64,7 @@ span.options{
   width: 50%;
   height: 12px;
   opacity: .8;
-  background:gray;
+  background:#1F2F46;
   transition: opacity .2s;
   border-radius: 12px;
   outline: none;
@@ -79,17 +85,11 @@ span.options{
 }
 
 
-.box {
-  background-color: black;
-  height: 100px;
-  width: 100px;
-  border-radius: 0 50% 50% 50%;
-  transform: rotate(-135deg);
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 100px;
 
+
+.heading {
+  text-align: center;
+  bottom: 0;
 }
+
 
